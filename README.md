@@ -4,6 +4,8 @@
 
 RAC PHP code is structure around [Limonade](http://github.com/sofadesign/limonade), which is a lightweight PHP framework.
 
+See [here](http://twitpic.com/1mvo8o) for a screenshot.
+
 ## Installation ##
 
 Install the PHP Erlang Bridge Extension from [here](http://code.google.com/p/mypeb/)
@@ -30,6 +32,8 @@ _Design_: Neil Fang
 _PHP Code_: Alvaro Videla
 
 _RabbitMQ logo taken from_: http://www.rabbitmq.com/
+
+
 
 ## TODO ##
 
