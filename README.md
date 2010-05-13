@@ -19,7 +19,9 @@ Get the source code of limonade:
 
     > git clone http://github.com/sofadesign/limonade.git lib/vendor/limonade
     
-Setup an Apache Virtual host or your Nginx to use the project's web folder as the document root
+Setup an Apache Virtual host or your Nginx to use the project's web folder as the document root.
+
+The admin console has been tested in the same server that runs the RabbitMQ process.
 
 ## Configuration ##
 
