@@ -26,7 +26,9 @@ Copy the file _config/config.php.sample to _config/config.php_ and edit the valu
 ## Credits: ##
 
 _Design_: Neil Fang
+
 _PHP Code_: Alvaro Videla
+
 _RabbitMQ logo taken from_: http://www.rabbitmq.com/
 
 ## TODO ##
