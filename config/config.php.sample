@@ -1,0 +1,4 @@
+<?php
+
+define('RABBITMQ_HOST', 'rabbit@127.0.0.1');
+define('RABBITMQ_COOKIE', 'COOKIE_HERE');

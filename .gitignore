@@ -1,0 +1,3 @@
+lib/vendor/*
+./sync.sh
+config/config.php
