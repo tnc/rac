@@ -26,7 +26,21 @@
 </head>
 <body>
 <div id="page">
-  <h1 id="top"><a href="/"><img src="/img/rabbitmqlogonostrap.png" /></a><a href="/">Administration Console</a></h1>
+  <h1 id="top">
+    <form id="server_form" action="/switch_server" method="POST" accept-charset="utf-8">
+      <select id='server_id' name='server_id' change="" style="float:right">
+        <?php foreach($RABBIT_SERVERS as $k => $server): ?>
+        <option value="<?php echo $k; ?>" <?php echo (get_server_id() == $k) ? 'selected="true"' : ''; ?>><?php echo $server['host']; ?></option>
+        <?php endforeach; ?>
+      </select>
+    </form>
+    <script type="text/javascript" charset="utf-8">
+      $('#server_id').change(function() {
+        $('#server_form').submit();
+      });
+    </script>
+  <a href="/"><img src="/img/rabbitmqlogonostrap.png" /></a><a href="/">Administration Console</a>
+  </h1>
   <ul id="menu">
     <li><a href="/">Vhosts</a></li>
     <li><a href="/list_users">Users</a></li>
@@ -34,7 +48,7 @@
     <li><a href="/list_channels">Channels</a></li>
   </ul>
   <div id="content">
-		<?php echo $content; ?>
+    <?php echo $content; ?>
   </div>
   <div class="clear">
     <!---->

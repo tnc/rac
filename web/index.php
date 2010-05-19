@@ -1,10 +1,14 @@
 <?php
 
+session_start();
+
 require_once(__DIR__ . '/../lib/vendor/limonade/lib/limonade.php');
-require_once(__DIR__ . '/../config/config.php');
+require_once(__DIR__ . '/../lib/helpers.php');
 
 function configure()
 {
+  init_servers_config();
+  
   option('env', ENV_DEVELOPMENT);
   option('limonade_dir', __DIR__ . '/../lib/vendor/limonade/lib');
   option('lib_dir', __DIR__ . '/../lib');
@@ -16,6 +20,8 @@ function before($route)
 {
   layout('layout.html.php');
 }
+
+dispatch_post('/switch_server', 'switch_server');
 
 dispatch('/', 'list_vhosts');
 dispatch('/vhost_permissions/:vhost', 'list_vhost_permissions');

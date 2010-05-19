@@ -1,4 +1,16 @@
 <?php
 
-define('RABBITMQ_HOST', 'rabbit@127.0.0.1');
-define('RABBITMQ_COOKIE', 'COOKIE_HERE');
+$RABBIT_SERVERS = array(
+    array(
+        'host' => 'rabbit@10.20.0.1',
+        'cookie' => 'COOKIE_HERE'
+      ),
+    array(
+        'host' => 'rabbit@10.20.0.2',
+        'cookie' => 'COOKIE_HERE'
+      ),
+    array(
+        'host' => 'rabbit@10.20.0.3',
+        'cookie' => 'COOKIE_HERE'
+      )
+  );
