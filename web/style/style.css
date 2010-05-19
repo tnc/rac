@@ -95,7 +95,7 @@ dl dd {
 	border-color: #ffd6ba #900 #900 #ffd6ba
 }
 .button:hover {
-	color:#FC3;
+	color:#ffe8a3;
 	background:#ff802b
 }
 /**main**/
@@ -121,30 +121,44 @@ dl dd {
 	font-size:14px;
 }
 /**menu**/
-#menu {
-	width:200px;
+#menu{
+	width:204px;
 	float:left;
+	margin:5px auto;
+}
+#menu ul {
+	display:block;
 	border:1px #CCC solid;
 	padding:1px 1px 0;
-	margin:5px auto;
-	background:#FFF
+	background:#FFF;
+	margin-bottom:5px;
 }
-#menu li {
+#menu ul li {
 	line-height:26px;
 	height:26px;
 	background:#efefef;
 	margin-bottom:1px;
 }
-#menu li a {
+#menu ul li a {
 	display:block;
 	text-indent:15px;
 	font-size:14px;
 	color:#F60;
 	text-decoration:none
 }
-#menu li a:hover {
+#menu ul li a:hover {
 	background:#F60;
 	color:#FFF
+}
+#menu strong.subject{
+	display:block;
+	color:#333;
+}
+#menu select#server_id{
+	width:204px;
+	border:1px #CCC solid;
+	padding:2px;
+	color:#555
 }
 /**content**/
 #content {
@@ -172,7 +186,6 @@ table.form th, table.form td {
 	border-bottom:1px #FFF solid;
 	border-left:1px #FFF solid;
 	text-align:left;
-	text-transform: capitalize
 }
 table.form th {
 	background:#888;
