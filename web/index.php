@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 require_once(__DIR__ . '/../lib/vendor/limonade/lib/limonade.php');
 require_once(__DIR__ . '/../lib/helpers.php');
 
