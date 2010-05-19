@@ -25,7 +25,7 @@ The admin console has been tested in the same server that runs the RabbitMQ proc
 
 ## Configuration ##
 
-Copy the file _config/config.php.sample to _config/config.php_ and edit the values for *RABBITMQ_HOST* and *RABBITMQ_COOKIE* to suit those of your system.
+Copy the file _config/config.php.sample to _config/config.php_ and edit the values for *host* and *cookie* to suit those of your system.
     
 ## Credits: ##
 
