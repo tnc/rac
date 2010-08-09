@@ -12,7 +12,7 @@ Install the PHP Erlang Bridge Extension from [here](http://code.google.com/p/myp
     
 Get the source code of RAC:
 
-    > git clone http://github.com/tnc/rac
+    > git clone http://github.com/tnc/rac.git
     > cd rac
 
 Get the source code of limonade:
